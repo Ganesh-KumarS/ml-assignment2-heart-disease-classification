@@ -114,7 +114,7 @@ For each model, we calculated:
 
 ## Deployment
 
-The application is deployed on Streamlit Community Cloud: `<add your live Streamlit app URL here after deploying>`
+The application is deployed on Streamlit Community Cloud: https://ml-assignment2-heart-disease-classification-tpbmdxvgvmryzksdft.streamlit.app/
 
 ## GitHub Repository
 
