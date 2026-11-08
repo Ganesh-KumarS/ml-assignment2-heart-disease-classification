@@ -70,24 +70,24 @@ For each model, we calculated:
 | KNN | Good performance (83.15% accuracy); captures non-linear patterns well; computationally expensive for large datasets. |
 | Naive Bayes | Fast training and prediction; highest precision (86.14%); assumes feature independence. |
 | SVM | Best overall performer; handles complex decision boundaries well; takes longer to train. |
-| **Overall Winner** | **SVM** — highest accuracy, AUC, recall, F1, and MCC among all 5 models. |
+| **Overall Winner** | **SVM**, highest accuracy, AUC, recall, F1, and MCC among all 5 models. |
 
 ## Project Structure
 
 ```
-├── app.py                  # Streamlit web application
-├── train_models.py         # Training script for all 5 models
-├── data_preparation.py     # Data loading and preprocessing
-├── requirements.txt        # Python dependencies
-├── heart_disease_full.csv  # Full dataset
-├── test_data.csv          # Test dataset for evaluation
-└── model/                 # Saved trained models
-    ├── scaler.joblib
-    ├── logistic_regression.joblib
-    ├── decision_tree.joblib
-    ├── knn.joblib
-    ├── naive_bayes.joblib
-    └── svm.joblib
+app.py                  - Streamlit web application
+train_models.py         - Training script for all 5 models
+data_preparation.py     - Data loading and preprocessing
+requirements.txt        - Python dependencies
+heart_disease_full.csv  - Full dataset
+test_data.csv           - Test dataset for evaluation
+model/                  - Saved trained models
+  scaler.joblib
+  logistic_regression.joblib
+  decision_tree.joblib
+  knn.joblib
+  naive_bayes.joblib
+  svm.joblib
 ```
 
 ## How to Run

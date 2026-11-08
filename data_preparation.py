@@ -51,9 +51,7 @@ print(data['target'].value_counts())
 data.to_csv('heart_disease_full.csv', index=False)
 print("\nSaved heart_disease_full.csv")
 
-# Create test split (must match the train/test split used in train_models.py
-# so that test_data.csv is a true held-out set with zero overlap with the
-# data the saved models were trained on)
+# test split (same params as train_models.py, so no overlap with training data)
 train, test = train_test_split(data, test_size=0.2, random_state=42, stratify=data['target'])
 test.to_csv('test_data.csv', index=False)
 print(f"Saved test_data.csv ({len(test)} rows)")
